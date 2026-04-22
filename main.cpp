@@ -20,3 +20,18 @@ bool isSecure(string pwd) {
     
     return hasNum && isLongEnough;
 }
+
+#raka
+int main() {
+    displayHeader();
+    string password = "Abcde!2345";
+    string cipherText = encryptData(password);
+    
+    cout << "Encrypted password is " << cipherText << endl;
+    
+    if (isSecure(password)) {
+        cout << "Password is secure!" << endl;
+    } else {
+        cout << "Password is not secure!" << endl;
+    }
+}
